@@ -15,5 +15,5 @@ kubectl apply -k ./ --namespace=[name_space] --validate=false
 
 ####################################################################<br />
 
-This directory contains an example of how to run real applications with Kubernetes.
+This directory contains an example of how to run real applications with Kubernetes.<br />
 Refer to the Kubernetes documentation for how to execute the tutorials.
