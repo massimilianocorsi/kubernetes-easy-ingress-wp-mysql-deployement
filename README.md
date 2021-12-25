@@ -1,11 +1,12 @@
 # kubernetes-easy-ingress-wp-mysql-deployement
 Easy deployment for K8s with :
-# Namespace, ingress, svc, pv, pvc, pod  (Wordpress (latest) / Mysql 5.7)
-This directory contains an example of how to run real applications with Kubernetes.
+# Namespace, ingress, svc, pv, pvc, pod  
+(Wordpress (latest) / Mysql 5.7)br />
+
 # Usage:<br />
-replace <b>[site_name_ext]</b> with your domain into ingress-route.yaml<br />
+replace <b>[site_name_ext]</b> with your domain into ingress-route.yaml<
 replace <b>[name_space]</b> with your namespace into namespace.yaml<br />
-replace <b>[your_mail]</b> with your mail into letsencrypt-prod.yaml<br />
+replace <b>[your_email@your_domain.ext]</b> with your mail into letsencrypt-prod.yaml<br />
 
 ####################################################################<br />
 
@@ -14,4 +15,5 @@ kubectl apply -k ./ --namespace=[name_space] --validate=false
 
 ####################################################################<br />
 
+This directory contains an example of how to run real applications with Kubernetes.
 Refer to the Kubernetes documentation for how to execute the tutorials.
