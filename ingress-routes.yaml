@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-routes
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+#change to your domain
+    - site_name_ext
+    secretName: tls-secret
+
+  - hosts:
+#change to your domain
+    - www.site_name_ext
+    secretName: www.tls-secret
+
+  - hosts:
+#change to your domain
+    - admin.site_name_ext
+    secretName: admin.tls-secret
+  
+  rules:
+#change to your domain
+  - host: site_name_ext
+    http:
+      paths:
+        - path: /
+          backend:
+            serviceName: wordpress
+            servicePort: 80
+  - host: www.site_name_ext
+    http:
+      paths:
+        - path: /
+          backend:
+            serviceName: wordpress
+            servicePort: 80
+  - host: admin.site_name_ext
+    http:
+      paths:
+        - path: /wp-admin
+          backend:
+            serviceName: wordpress
+            servicePort: 80
+
