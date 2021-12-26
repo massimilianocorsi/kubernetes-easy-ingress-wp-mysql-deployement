@@ -1,7 +1,7 @@
 # kubernetes-easy-ingress-wp-mysql-deployement
 Easy deployment for K8s with :
 # Namespace, ingress, svc, pv, pvc, pod  
-(Wordpress (latest) / Mysql 5.7)<br />
+Wordpress (latest) / Mysql 5.7<br />
 
 # Usage:<br />
 replace <b>[site_name_ext]</b> with your domain into ingress-route.yaml<br />
