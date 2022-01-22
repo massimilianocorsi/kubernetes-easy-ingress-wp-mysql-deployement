@@ -8,36 +8,36 @@ spec:
   tls:
   - hosts:
 #change to your domain
-    - site_name_ext
+    - ${SITEURLEXT}
     secretName: tls-secret
 
   - hosts:
 #change to your domain
-    - www.site_name_ext
+    - www.${SITEURLEXT}
     secretName: www.tls-secret
 
   - hosts:
 #change to your domain
-    - admin.site_name_ext
+    - admin.${SITEURLEXT}
     secretName: admin.tls-secret
   
   rules:
 #change to your domain
-  - host: site_name_ext
+  - host: ${SITEURLEXT}
     http:
       paths:
         - path: /
           backend:
             serviceName: wordpress
             servicePort: 80
-  - host: www.site_name_ext
+  - host: www.${SITEURLEXT}
     http:
       paths:
         - path: /
           backend:
             serviceName: wordpress
             servicePort: 80
-  - host: admin.site_name_ext
+  - host: admin.${SITEURLEXT}
     http:
       paths:
         - path: /wp-admin
