@@ -16,7 +16,7 @@ replace <b>${SECRETPWD}</b> with your secret password into kustomization.yaml<br
 kubectl apply -f ./ letsencrypt-staging.yaml<br />
 kubectl apply -f ./ letsencrypt-prod.yaml<br />
 kubectl apply -f ./namespace.yaml<br />
-kubectl apply -k ./ --namespace=${NAMESPACE} --validate=false<br />
+kubectl apply -k ./ --namespace=<b>${NAMESPACE}</b> --validate=false<br />
 <br />
 This directory contains an example of how to run real applications with Kubernetes.<br />
 
