@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
 #change to your email
-    email: your_email@your_domain.ext
+    email: ${MAIL}
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-staging
