@@ -6,7 +6,7 @@ spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
 #change to your email
-    email: your_email@your_domain.ext
+    email: ${MAIL}
     privateKeySecretRef:
        name: letsencrypt-prod
     solvers:
