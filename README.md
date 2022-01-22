@@ -13,10 +13,10 @@ replace <b>${NAMESPACE}</b> with your namespace into namespace.yaml<br />
 replace <b>${SECRETPWD}</b> with your secret password into kustomization.yaml<br />
 
 # Usage:<br />
-kubectl apply -f ./ letsencrypt-staging.yaml
-kubectl apply -f ./ letsencrypt-prod.yaml
-kubectl apply -f ./namespace.yaml
-kubectl apply -k ./ --namespace=${NAMESPACE} --validate=false
-
+kubectl apply -f ./ letsencrypt-staging.yaml<br />
+kubectl apply -f ./ letsencrypt-prod.yaml<br />
+kubectl apply -f ./namespace.yaml<br />
+kubectl apply -k ./ --namespace=${NAMESPACE} --validate=false<br />
+<br />
 This directory contains an example of how to run real applications with Kubernetes.<br />
 
