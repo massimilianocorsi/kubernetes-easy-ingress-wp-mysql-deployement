@@ -8,7 +8,7 @@ Wordpress (4.8-apache) / Mysql 5.7<br />
 
 replace <b>[your_email@your_domain.ext]</b> with your mail into letsencrypt-staging.yaml<br />
 replace <b>[your_email@your_domain.ext]</b> with your mail into letsencrypt-prod.yaml<br />
-replace <b>[site_name_ext]</b> with your domain into ingress-route.yaml<br />
+replace <b>${SITEURLEXT}</b> with your domain into ingress-route.yaml<br />
 replace <b>[name_space]</b> with your namespace into namespace.yaml<br />
 replace <b>[your_secret_password]</b> with your secret password into kustomization.yaml<br />
 
